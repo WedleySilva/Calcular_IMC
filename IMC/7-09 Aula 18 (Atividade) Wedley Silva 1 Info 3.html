@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+ <meta charset="UTF-8">
+
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <link rel="shortcut icon" href="saude.png" type="image/x-icon">
+
+ <link rel= "stylesheet" type= "text/css" href="style10.css"/>
+
+ <title> Calculando IMC </title>
+
+</head>
+
+<body>  
+
+    <h1> Calculadora de IMC </h1>
+
+    <br> <br>
+
+    <script>
+
+        var Nome = prompt("Digite seu nome: ");
+
+        var Peso = prompt("Digite seu peso: ");
+
+        var Altura = prompt("Digite sua altura: ");
+
+        var IMC = Peso / (Altura * Altura)
+
+        if (IMC < 14.5){
+            document.write<("Olá "+Nome+"!<br> Seu IMC é "+IMC+"<br><br> Você infelizmente está desnutrido (Cuidado!)");
+        }
+
+        else if (IMC >= 14.5 && IMC <= 20){
+            document.write("Olá "+Nome+"!<br><br> Seu IMC é "+IMC+"<br> <br>Você está abaixo do peso normal, cuide de sua saúde.");
+        }
+
+        else if (IMC >= 20 && IMC <= 24.9){
+            document.write("Olá "+Nome+"!<br><br> Seu IMC é "+IMC+"<br><br> Você está no peso ideal, parabéns.");
+        }
+        
+        else if (IMC >= 25 && IMC <= 29.9){
+            document.write("Olá "+Nome+"!<br><br> Seu IMC é "+IMC+"<br><br> Você está com sobrepeso, cuide de sua saúde.");
+        }
+
+        else if (IMC >= 30 && IMC <= 39.9){
+            document.write("Olá "+Nome+"!<br><br> Seu IMC é "+IMC+"<br><br> Você está obeso, cuide de saúde.");
+        }
+
+        else {
+            document.write("Olá "+Nome+"!<br><br> Seu IMC é "+IMC+"<br><br> Você infelizmente está com obesidade mórbida (cuidado!)");
+        }
+        
+    </script>
+
+    <br> <br>
+
+    <h2> A classificação do índice de massa corporal (IMC), pode ajudar a identificar obesidade ou desnutrição em crianças, adolescentes, adultos e idosos. </h2>
+
+    <br> <br>
+
+    <h3> Além de saber qual é o seu IMC, essa calculadora também indica qual deve ser o seu peso ideal para alcançar a sua melhor forma, e assim melhorar sua qualidade de vida, garantindo o seu bem estar. </h3>
+
+</body>
+
+</html>
